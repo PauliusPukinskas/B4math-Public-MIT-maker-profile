@@ -18,6 +18,9 @@ A company can build a reviewable picture of its business, frame an alternative, 
 | **Stack (high level)** | TypeScript, Next.js, Node.js, PostgreSQL, Redis, background workers, external language model APIs |
 | **What I learned** | How to separate persuasive AI output from defensible calculation, design explicit human approval boundaries, and evolve a prototype into a durable application |
 
+**[Explore the live synthetic sample](https://b4math.com/demo)** · [Current product site](https://b4math.com/)  
+The live sample is read-only and uses fictional company context; it is separate from private customer data.
+
 ## Product screenshots
 
 *Archived captures from the development process, shown with synthetic demonstration data. They document UI iterations rather than verified business outcomes.*
