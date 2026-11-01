@@ -21,6 +21,12 @@ A company can build a reviewable picture of its business, frame an alternative, 
 **[Explore the live synthetic sample](https://b4math.com/demo)** · [Current product site](https://b4math.com/)  
 The live sample is read-only and uses fictional company context; it is separate from private customer data.
 
+## Inspect genuine source and runnable tests
+
+**[Open the original TypeScript source excerpts and no-dependency test suite](public-code/README.md).** These are two small, safe modules extracted from the actual private B4Math application, not freshly invented representations of its source. The extracted modules demonstrate revenue break-even safeguards and correct handling of unknown costs.
+
+`cd public-code && npm test` runs the public checks with Node 22.16+. This is **not** the complete application codebase. The sensitive decision engine, tenant data, credentials and backend infrastructure remain private.
+
 ## Product screenshots
 
 *Archived captures from the development process, shown with synthetic demonstration data. They document UI iterations rather than verified business outcomes.*
