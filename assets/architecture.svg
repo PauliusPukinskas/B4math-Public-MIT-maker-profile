@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="525" viewBox="0 0 1280 525" role="img" aria-labelledby="title desc">
+<title id="title">B4Math public architecture diagram</title>
+<desc id="desc">A high level five-stage system map: reviewed Company Brain, decision framing, deterministic rehearsal, decision brief, and reviewed learning. Human approval is required before updating company context.</desc>
+<rect width="1280" height="525" fill="#F7F8F4"/>
+<rect x="0" y="0" width="14" height="525" fill="#184A36"/>
+<text x="58" y="58" font-family="Arial,Helvetica,sans-serif" font-size="17" letter-spacing="3" fill="#32694B" font-weight="700">B4MATH / SYSTEM MAP</text>
+<text x="58" y="104" font-family="Arial,Helvetica,sans-serif" font-size="34" font-weight="700" fill="#112D22">A decision is a traceable process.</text>
+<text x="58" y="140" font-family="Arial,Helvetica,sans-serif" font-size="18" fill="#53685C">High-level architecture   •   simplified for a public engineering portfolio</text>
+<path d="M58 170H1222" stroke="#B7C9BA" stroke-width="1.5"/>
+<g font-family="Arial,Helvetica,sans-serif">
+  <g transform="translate(58 195)">
+    <rect width="213" height="172" fill="#FFFFFF" stroke="#B4C8BA" stroke-width="2"/>
+    <rect width="213" height="7" fill="#285A42"/>
+    <text x="18" y="38" font-size="15" fill="#447256" font-weight="700">01 / REVIEW</text>
+    <text x="18" y="76" font-size="23" fill="#112D22" font-weight="700">Company</text><text x="18" y="104" font-size="23" fill="#112D22" font-weight="700">Brain</text>
+    <text x="18" y="135" font-size="14" fill="#51685B">Facts · assumptions</text>
+    <text x="18" y="155" font-size="14" fill="#51685B">Sources · missing data</text>
+  </g>
+  <g transform="translate(297 195)">
+    <rect width="213" height="172" fill="#FFFFFF" stroke="#B4C8BA" stroke-width="2"/>
+    <rect width="213" height="7" fill="#285A42"/>
+    <text x="18" y="38" font-size="15" fill="#447256" font-weight="700">02 / FRAME</text>
+    <text x="18" y="76" font-size="23" fill="#112D22" font-weight="700">Decisions</text>
+    <text x="18" y="113" font-size="14" fill="#51685B">Alternatives · constraints</text>
+    <text x="18" y="135" font-size="14" fill="#51685B">Reviewed, frozen inputs</text>
+  </g>
+  <g transform="translate(536 195)">
+    <rect width="213" height="172" fill="#EAF0E8" stroke="#285A42" stroke-width="2"/>
+    <rect width="213" height="7" fill="#285A42"/>
+    <text x="18" y="38" font-size="15" fill="#447256" font-weight="700">03 / REHEARSE</text>
+    <text x="18" y="76" font-size="23" fill="#112D22" font-weight="700">Decision</text><text x="18" y="104" font-size="23" fill="#112D22" font-weight="700">engine</text>
+    <text x="18" y="135" font-size="14" fill="#51685B">Deterministic math</text>
+    <text x="18" y="155" font-size="14" fill="#51685B">Evidence safeguards</text>
+  </g>
+  <g transform="translate(775 195)">
+    <rect width="213" height="172" fill="#FFFFFF" stroke="#B4C8BA" stroke-width="2"/>
+    <rect width="213" height="7" fill="#285A42"/>
+    <text x="18" y="38" font-size="15" fill="#447256" font-weight="700">04 / DECIDE</text>
+    <text x="18" y="76" font-size="23" fill="#112D22" font-weight="700">Decision</text><text x="18" y="104" font-size="23" fill="#112D22" font-weight="700">Brief</text>
+    <text x="18" y="135" font-size="14" fill="#51685B">Reason · uncertainty</text>
+    <text x="18" y="155" font-size="14" fill="#51685B">Test · stop rule</text>
+  </g>
+  <g transform="translate(1014 195)">
+    <rect width="208" height="172" fill="#FFFFFF" stroke="#B4C8BA" stroke-width="2"/>
+    <rect width="208" height="7" fill="#285A42"/>
+    <text x="18" y="38" font-size="15" fill="#447256" font-weight="700">05 / LEARN</text>
+    <text x="18" y="76" font-size="23" fill="#112D22" font-weight="700">Outcome</text><text x="18" y="104" font-size="23" fill="#112D22" font-weight="700">review</text>
+    <text x="18" y="135" font-size="14" fill="#51685B">Observed vs expected</text>
+    <text x="18" y="155" font-size="14" fill="#51685B">Approve before writing</text>
+  </g>
+</g>
+<g stroke="#2D674D" stroke-width="3" fill="none" stroke-linecap="square"><path d="M276 281H291"/><path d="M515 281H530"/><path d="M754 281H769"/><path d="M993 281H1008"/></g>
+<g fill="#2D674D"><path d="M290 276L297 281L290 286Z"/><path d="M529 276L536 281L529 286Z"/><path d="M768 276L775 281L768 286Z"/><path d="M1007 276L1014 281L1007 286Z"/></g>
+<path d="M1118 375V402H164V375" stroke="#2D674D" stroke-width="2" stroke-dasharray="6 7" fill="none"/>
+<rect x="445" y="387" width="410" height="27" fill="#F7F8F4"/><text x="650" y="405" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700" letter-spacing="1" fill="#2D674D">REVIEWED LEARNING FEEDS FUTURE DECISIONS</text>
+<path d="M58 432H1222" stroke="#B7C9BA" stroke-width="1.5"/>
+<text x="58" y="461" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700" fill="#285A42">SAFETY BOUNDARIES</text>
+<text x="58" y="491" font-family="Arial,Helvetica,sans-serif" font-size="17" fill="#324D3E">Human approval   /   Frozen decision snapshots   /   Tenant-scoped data   /   Unknowns remain unknown</text>
+</svg>
