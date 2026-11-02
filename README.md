@@ -21,6 +21,12 @@ A company can build a reviewable picture of its business, frame an alternative, 
 **[Explore the live synthetic sample](https://b4math.com/demo)** · [Current product site](https://b4math.com/)  
 The live sample is read-only and uses fictional company context; it is separate from private customer data.
 
+## My technical ownership: backend first
+
+**[Read my backend and algorithm contribution breakdown](docs/MY_BACKEND_AND_ALGORITHM_WORK.md).**
+
+I personally drove the backend architecture, persistent Company Brain, decision and simulation contracts, numerical safeguards, durable workflows and verification. The strongest publicly inspectable proof is the pair of **original production TypeScript modules** and their standalone tests below. I used AI coding tools to speed up portions of implementation, especially frontend work; that is disclosed rather than disguised. I am the sole founder, not the sole manual author of every line.
+
 ## Inspect genuine source and runnable tests
 
 **[Open the original TypeScript source excerpts and no-dependency test suite](public-code/README.md).** These are two small, safe modules extracted from the actual private B4Math application, not freshly invented representations of its source. The extracted modules demonstrate revenue break-even safeguards and correct handling of unknown costs.
