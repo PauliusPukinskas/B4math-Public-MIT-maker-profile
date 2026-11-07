@@ -1,0 +1,91 @@
+{
+  "capturedOn": "2026-11-07",
+  "context": "Current public product views, separate from historical build artifacts. Screenshots demonstrate UI behavior and do not establish empirical forecast accuracy.",
+  "attribution": "Paulius Pukinskas, solo founder; AI assisted implementation",
+  "captures": [
+    {
+      "file": "b4math-workspace.jpg",
+      "url": "https://b4math.com/demo",
+      "capturedAt": "2026-11-07T15:15:34.724Z",
+      "view": "Workspace",
+      "viewport": {
+        "width": 1363,
+        "height": 936
+      },
+      "sha256": "36524415c214183ff3f981c6d48647117731840e93f24b68d1c1672a2c96b739",
+      "captureMethod": "Browser viewport screenshot; JPEG bytes retained unchanged",
+      "dataContext": "Synthetic public sample",
+      "language": "English"
+    },
+    {
+      "file": "b4math-company-brain.jpg",
+      "url": "https://b4math.com/demo",
+      "capturedAt": "2026-11-07T15:16:14.396Z",
+      "view": "Company Brain",
+      "viewport": {
+        "width": 1353,
+        "height": 929
+      },
+      "sha256": "7b9e7ef8714604eb4cb7f8ffff58d234aa7c02c79638cda957a40ad7d95fd5f4",
+      "captureMethod": "Browser viewport screenshot; JPEG bytes retained unchanged",
+      "dataContext": "Synthetic public sample",
+      "language": "English"
+    },
+    {
+      "file": "b4math-analysis-setup.jpg",
+      "url": "https://b4math.com/demo",
+      "capturedAt": "2026-11-07T15:16:33.780Z",
+      "view": "Analysis before execution",
+      "viewport": {
+        "width": 1353,
+        "height": 929
+      },
+      "sha256": "57834722e7cfff7d6a21713ac030b0db0e082d51e687cf38cd18771d1aedc842",
+      "captureMethod": "Browser viewport screenshot; JPEG bytes retained unchanged",
+      "dataContext": "Synthetic public sample",
+      "language": "English"
+    },
+    {
+      "file": "b4math-decision-result.jpg",
+      "url": "https://b4math.com/demo",
+      "capturedAt": "2026-11-07T15:17:03.432Z",
+      "view": "Executed synthetic decision brief",
+      "viewport": {
+        "width": 1353,
+        "height": 929
+      },
+      "sha256": "3eade643f4d0a60d7a7b25b782c1739666c8b780031a7a564cb97769925ee0be",
+      "captureMethod": "Browser viewport screenshot; JPEG bytes retained unchanged",
+      "dataContext": "Synthetic public sample",
+      "language": "English"
+    },
+    {
+      "file": "b4math-evidence-quality.jpg",
+      "url": "https://b4math.com/demo#evidence-quality",
+      "capturedAt": "2026-11-07T15:17:14.834Z",
+      "view": "Evidence quality and sensitivity",
+      "viewport": {
+        "width": 1353,
+        "height": 929
+      },
+      "sha256": "72b8b26723a007f1be23d508b09871be6cecb3ecdc969ce77d2132712034c459",
+      "captureMethod": "Browser viewport screenshot; JPEG bytes retained unchanged",
+      "dataContext": "Synthetic public sample",
+      "language": "English"
+    },
+    {
+      "file": "b4math-outcome-learning.jpg",
+      "url": "https://b4math.com/demo#evidence-quality",
+      "capturedAt": "2026-11-07T15:17:47.262Z",
+      "view": "Owner review boundary for synthetic learning",
+      "viewport": {
+        "width": 1363,
+        "height": 936
+      },
+      "sha256": "bd7ef2f18a49debf90ffef9cff55cc6c93a33a2d910b259e1be1680af44117df",
+      "captureMethod": "Browser viewport screenshot; JPEG bytes retained unchanged",
+      "dataContext": "Synthetic public sample",
+      "language": "English"
+    }
+  ]
+}

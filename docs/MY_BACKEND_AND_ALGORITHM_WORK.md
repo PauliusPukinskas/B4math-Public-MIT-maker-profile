@@ -19,6 +19,14 @@ I did not train the external foundation models used through APIs. B4Math is a de
 
 The timeline describes work **under my technical direction**, using both manual implementation and AI development tools. Without line-level review of every historical commit, I do not attribute every source line exclusively to myself.
 
+## Company Brain and decision state
+
+My backend work starts before a simulation runs. Company knowledge needs a stable identity, revisions and evidence that can be traced to the version a decision used. A single editable prompt would lose that history.
+
+The implementation separates the current record from its revision history and evidence relationships. A later edit creates a new revision; evidence carried forward retains its observation date. Readiness uses evidence at the category level so duplicate records cannot inflate its quality. The private architecture decision and current source paths were checked again on November 7, 2026.
+
+The design tradeoff is additional persistence and validation work in exchange for being able to explain which facts supported an earlier result. The public [Company Brain capture](PRODUCT_WALKTHROUGH.md#company-brain) shows the distinction between reviewed context, assumptions and gaps. The [outcome learning capture](PRODUCT_WALKTHROUGH.md#outcome-learning) shows where human review prevents a proposed learning from silently changing that context.
+
 ## Source code a reviewer can actually inspect
 
 This repo contains **two exact copies of real TypeScript modules from the original private application's domain package**, verified against their original Git blob hashes.

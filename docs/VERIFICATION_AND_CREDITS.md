@@ -14,6 +14,10 @@
 
 ## Visual evidence
 
+The [current product walkthrough](PRODUCT_WALKTHROUGH.md) adds six direct captures from the live public synthetic sample on November 7, 2026. It includes an executed analysis result, Company Brain and the outcome review boundary. [Capture metadata](../assets/live-screenshots/2026-11-07/CAPTURE_INFO.json) records exact times, URLs and unchanged image hashes. [Current checks](REVIEW_CHECKS.md) record the latest public suite and source comparison.
+
+### Earlier development captures
+
 The screenshots published here are selected, archived UI captures from the private development repository.
 
 - [Early public presentation](../assets/screenshots/01-public-demo.png)
@@ -33,7 +37,7 @@ No other founder is claimed. This is not a claim that every line was coded manua
 
 ## Why the source is not public
 
-I have deliberately not copied private implementation into a showcase repo. In particular, it excludes proprietary decision policies, operational configuration, sensitive provider details, security mechanisms, database internals and any private business records.
+Two generic domain modules are published with provenance in [public-code](../public-code/README.md). The remaining private implementation excludes proprietary decision policies, operational configuration, sensitive provider details, security mechanisms, database internals and private business records.
 
 **What an evaluator can assess here:** originality of the product problem, progression of the build, architectural tradeoffs, demonstrated interfaces, the author's technical responsibilities and the limitations of existing evaluation.
 
