@@ -80,6 +80,20 @@ October 18 work addressed decision history contracts, learning follow-ups and ac
 
 New commits recorded derived metric dependency tests, developer prerequisites and dependency compatibility upgrades. These are important precisely because they are unglamorous: preserving correct behavior across a changing codebase is part of building a real product.
 
+## Original engineering checkpoints
+
+These are existing commits in the private source history, inspected on November 8. The public showcase does not recreate their timestamps or expose their patches.
+
+| Date | Existing commit | Engineering change |
+| :--- | :--- | :--- |
+| July 16 | `0c41e0fbd9536b11fbe0e05665c94e86c3fda865` | Versioned Company Brain foundation |
+| August 9 | `ee39e54f3353d7e5e7438a043a65f30f069a940b` | Deterministic SaaS derived metric graph runtime |
+| August 9 | `b89da718b061fe2985e54af86ed5e0f494f17b42` | Connect the graph to the decision engine |
+| October 16 | `69dd19010482889ff0bf1a87ad45ed5d02d1d76c` | Version numerical safety and preserve historical replay |
+| October 16 | `04ca62981e8dd7ae418d87e0c96c3807cdb31ed2` | Preserve missing primary objectives in ranking safeguards |
+
+The [backend cases](BACKEND_CASE_STUDIES.md) connect those changes to a hand calculated accounting fixture, revision behavior and execution failure cases. Original commit identifiers establish which records were inspected; they do not make the private history publicly accessible or establish individual line authorship.
+
 ## Four engineering decisions I would defend
 
 1. **Deterministic numbers, explicit assumptions.** Language models assist with interpreting intent; the mathematical core checks what can actually be computed.
@@ -95,3 +109,4 @@ New commits recorded derived metric dependency tests, developer prerequisites an
 - This is a history of product and engineering work under my direction. Tool-assisted code generation and debugging were part of my workflow; authorship should not be inferred solely from commit labels.
 
 [Return to the overview](../README.md) · [Engineering notes](ENGINEERING.md) · [Verification and credits](VERIFICATION_AND_CREDITS.md)
+

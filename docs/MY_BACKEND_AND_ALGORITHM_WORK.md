@@ -1,62 +1,36 @@
-# My backend and algorithm work in B4Math
+# My backend and algorithm work
 
-**My role:** solo founder, product architect and hands-on backend/decision-logic developer. AI coding assistants helped me ship portions of the implementation, especially UI iteration and repetitive tasks; they were tools, not a substitute for system design, testing and engineering decisions.
+**Paulius Pukinskas · Solo founder, product architect and hands on backend developer**
 
-I did not train the external foundation models used through APIs. B4Math is a decision-rehearsal application, not a claim that I can perfectly forecast business markets.
+I lead B4Math's technical direction and work on the application behind the interface: company state, calculation contracts, model integration, durable execution and outcome review. Coding assistants support implementation and debugging, especially interface iteration and repetitive work.
 
-## What I built and why
+## Where my work sits
 
-| Backend problem | My engineering responsibility | Supporting evidence |
-| --- | --- | --- |
-| A company cannot be reduced to a single prompt | Design and development of the persistent, versioned Company Brain and review state | Private repository history and [engineering notes](ENGINEERING.md) |
-| AI prose must not become invented accounting | Decision calculation contracts, guardrails and explicit missing-input behavior | [Actual pricing arithmetic module](../public-code/pricing-break-even.ts) and [original validation/test context](../public-code/README.md) |
-| Unknown implementation costs are not zero | Deterministic economics calculation and null-safe output contract | [Actual domain module](../public-code/company-improvement.ts) |
-| Background execution must preserve results | Backend workflows, durable jobs, database state, retry/failure boundaries | [Dated engineering history](DEVELOPMENT_HISTORY.md) |
-| Decisions must remain auditable | Frozen context, versioned inputs, stored outputs and outcome tracking | [Engineering](ENGINEERING.md) and [verification](VERIFICATION_AND_CREDITS.md) |
-| Learning cannot silently rewrite company facts | Human review and explicit approval before long-term state changes | [Development history](DEVELOPMENT_HISTORY.md) |
-| Calculations need regression protection | Correctness testing, boundary cases, synthetic fixtures and deterministic checks | [Source excerpts and public smoke tests](../public-code/README.md), [historical test evidence](VERIFICATION_AND_CREDITS.md) |
-| A demo must not expose actual tenants | Public synthetic sample and permission boundaries | [Live read-only demo](https://b4math.com/demo) |
+| Area | My responsibility | Evidence to inspect |
+| :--- | :--- | :--- |
+| Calculation pipeline | Translate business questions into explicit inputs, dependencies and comparable outcomes | [Accounting graph and validation cases](BACKEND_CASE_STUDIES.md#1-a-calculation-graph-for-business-outcomes) |
+| Persistent company knowledge | Model revisions, evidence relationships and context used by decisions | [Revision and concurrency example](BACKEND_CASE_STUDIES.md#2-company-memory-that-can-be-revisited) |
+| Asynchronous execution | Preserve submitted work and results across delivery failures and retries | [Failure matrix](BACKEND_CASE_STUDIES.md#3-background-execution-with-durable-state) |
+| Numerical correctness | Preserve missing inputs, enforce units and retain meaningful objectives | [Original regression cases](BACKEND_CASE_STUDIES.md#original-source-and-verification-record) |
+| Outcome learning | Separate an observed result from a proposed change to company knowledge | [Working walkthrough](PRODUCT_WALKTHROUGH.md#outcome-learning) |
+| Integration | Connect external model APIs, application services, tests and deployment | [Engineering boundaries](ENGINEERING.md) and [build history](DEVELOPMENT_HISTORY.md) |
 
-The timeline describes work **under my technical direction**, using both manual implementation and AI development tools. Without line-level review of every historical commit, I do not attribute every source line exclusively to myself.
+The [backend cases](BACKEND_CASE_STUDIES.md) follow substantial examples from problem through design choice to verification. They describe existing application behavior without publishing the private implementation.
 
-## Company Brain and decision state
+## Source a reader can run
 
-My backend work starts before a simulation runs. Company knowledge needs a stable identity, revisions and evidence that can be traced to the version a decision used. A single editable prompt would lose that history.
+| Original module | Design choice |
+| :--- | :--- |
+| [Pricing break even](../public-code/pricing-break-even.ts) | Derive a revenue identity only from explicit, compatible prices |
+| [Company improvement economics](../public-code/company-improvement.ts) | Preserve unknown costs and withhold unsupported returns |
 
-The implementation separates the current record from its revision history and evidence relationships. A later edit creates a new revision; evidence carried forward retains its observation date. Readiness uses evidence at the category level so duplicate records cannot inflate its quality. The private architecture decision and current source paths were checked again on November 7, 2026.
+Both files match the original private source blobs. The standalone public tests are documented in [public-code](../public-code/README.md). They are small supporting examples; the accounting graph, persistence and worker implementation remain private.
 
-The design tradeoff is additional persistence and validation work in exchange for being able to explain which facts supported an earlier result. The public [Company Brain capture](PRODUCT_WALKTHROUGH.md#company-brain) shows the distinction between reviewed context, assumptions and gaps. The [outcome learning capture](PRODUCT_WALKTHROUGH.md#outcome-learning) shows where human review prevents a proposed learning from silently changing that context.
+## Contribution and assistance
 
-## Source code a reviewer can actually inspect
+I am the sole founder and take responsibility for product direction, architecture and substantial backend and algorithm development. The project uses libraries, coding assistants and external pretrained models. This account identifies my work and technical decisions without attributing every generated or collaborative line exclusively to me.
 
-This repo contains **two exact copies of real TypeScript modules from the original private application's domain package**, verified against their original Git blob hashes.
+The public screenshots demonstrate the product workflow. Synthetic fixtures test defined behavior. Forecast calibration against real company outcomes is a separate, unfinished evaluation task.
 
-### 1. Pricing break-even is arithmetic, not a demand prediction
+[Overview](../README.md) · [Backend cases](BACKEND_CASE_STUDIES.md) · [Credits](VERIFICATION_AND_CREDITS.md)
 
-[`public-code/pricing-break-even.ts`](../public-code/pricing-break-even.ts)
-
-Given an explicitly quoted change from $149 to $169, required volume to hold **revenue** constant is 149 / 169, or about 88.2% of the original paid volume. The module rejects ambiguous pricing language, mismatched currencies and contradictory billing periods. It does not claim the customers will actually remain or that profit increases.
-
-### 2. Missing cost is not free
-
-[`public-code/company-improvement.ts`](../public-code/company-improvement.ts)
-
-When expected annual impact is supplied but implementation cost is unknown, first-year net benefit and payback remain **null**, not falsely positive. If the annual impact itself is missing, no economics result is derived.
-
-Run these selected modules' [public tests](../public-code/README.md) with `cd public-code && npm test`. This is a **limited code excerpt**, not the proprietary decision-engine implementation or a substitute for the full private app.
-
-## The design decisions I would defend to an MIT reviewer
-
-1. **Immutable historical decisions.** Reopening a result should not update the facts on which it originally rested.
-2. **Explicit uncertainty.** A numerical answer may be withheld when a necessary baseline, measurement or constraint is unknown.
-3. **Human-approved learning.** Later outcomes must not automatically corrupt persistent company memory.
-4. **Separation of model and calculation.** An LLM can help interpret an ambiguous question; deterministic code must govern arithmetic.
-5. **Durable state boundaries.** A failed worker should not destroy the record of an attempted decision.
-
-## Collaboration and limits
-
-I am B4Math's solo founder, **not** the exclusive manual author of every UI or backend line. Generative coding assistance, libraries, open-source software and pretrained model APIs were part of development. The two published modules are genuine selected code; most production source remains private for business, security and confidentiality reasons.
-
-What the portfolio proves well: I took responsibility for substantial backend design and concrete numerical correctness safeguards, and can point to real tests and tradeoffs. What it does not prove: forecast calibration on a large population of real business outcomes, or personal authorship of every line in the private codebase.
-
-[Main project](../README.md) · [Public code](../public-code/README.md) · [Dated history](DEVELOPMENT_HISTORY.md) · [Verification](VERIFICATION_AND_CREDITS.md)

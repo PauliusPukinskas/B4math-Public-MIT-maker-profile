@@ -12,6 +12,12 @@
 | October 16 | Synthetic decision lab with 12 fixtures and three additional properties | Supports correctness and safety checks on controlled examples, **not forecast accuracy in real businesses** |
 | November 1 | Tests added for derived metric dependencies and graph cycles | Additional regression coverage; the record explicitly says automated tests were not run in that specific documentation session |
 
+## Latest inspected original CI record
+
+On November 8, the November 1 private CI run `41340055654` was inspected at source revision `126079d231ab1886bd027c980efc2ccf51b6dead`. It records **981 passing unit tests, one skipped test, and 84 passing integration tests across 17 files**. Validation, public layout and browser smoke jobs succeeded; the separate manually triggered browser job was skipped.
+
+The calculation graph suite accounts for 11 passing tests and Company Brain readiness for three. [Backend case studies](BACKEND_CASE_STUDIES.md) explain selected inputs, expected outputs and source fingerprints. These are historical CI results, not a new full suite run on November 8 or evidence of real business forecast calibration. Raw private logs and additional application source are not published.
+
 ## Visual evidence
 
 The [current product walkthrough](PRODUCT_WALKTHROUGH.md) adds six direct captures from the live public synthetic sample on November 7, 2026. It includes an executed analysis result, Company Brain and the outcome review boundary. [Capture metadata](../assets/live-screenshots/2026-11-07/CAPTURE_INFO.json) records exact times, URLs and unchanged image hashes. [Current checks](REVIEW_CHECKS.md) record the latest public suite and source comparison.
@@ -44,3 +50,4 @@ Two generic domain modules are published with provenance in [public-code](../pub
 **What an evaluator cannot independently audit here:** the complete code implementation or internal commit history. Those remain private.
 
 [Overview](../README.md) · [Development history](DEVELOPMENT_HISTORY.md) · [Engineering choices](ENGINEERING.md)
+
